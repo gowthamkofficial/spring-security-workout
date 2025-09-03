@@ -9,16 +9,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class UserResponseDto {
+public class RoleResponseDto {
+	
+	private String roleName;
+	private Long roleId;
 
-	private Long userId;
-	
-	private String name;
-	
-	private String email;
-	
-	private String mobileNumber;
-	
-	private RoleResponseDto roleDetails;
-	
 }

@@ -8,6 +8,7 @@ import com.offcl.spring_security_workout.entity.User;
 
 public interface UserRepository extends JpaRepository<User, Long> {
 	
-	Optional<User> findByUsername(String username);
+	boolean existsByEmail(String email);
+	boolean existsByMobileNumber(String mobileNumber);
 
 }

@@ -35,21 +35,6 @@ This project uses **PostgreSQL** as the database.
 
 ---
 
-## 📂 Project Structure
-
-spring-security-workout
-┣ 📂 src/main/java/com/example/demo
-┃ ┣ 📂 controller # AuthController, UserController
-┃ ┣ 📂 entity # User entity (and Role if needed)
-┃ ┣ 📂 repository # JPA repositories
-┃ ┣ 📂 security # SecurityConfig, JWT filter, UserDetailsService
-┃ ┣ 📂 service # AuthService, UserService
-┃ ┗ 📂 payload # DTOs & response models
-┣ 📂 src/main/resources
-┃ ┣ application.yml # PostgreSQL & JWT configuration
-┃ ┗ data.sql # Optional initial data
-┗ pom.xml
-
 
 🔑 API Endpoints
 Public (No Auth)

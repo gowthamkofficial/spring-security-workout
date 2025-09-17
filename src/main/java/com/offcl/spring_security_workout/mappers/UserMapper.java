@@ -1,5 +1,7 @@
 package com.offcl.spring_security_workout.mappers;
 
+
+
 import com.offcl.spring_security_workout.dto.RoleResponseDto;
 import com.offcl.spring_security_workout.dto.UserResponseDto;
 import com.offcl.spring_security_workout.entity.Role;
@@ -21,7 +23,7 @@ public class UserMapper {
 	
 	
 	public static RoleResponseDto mapRoleResponse(Role role) {
-		return RoleResponseDto.builder().roleId(role.getId()).roleName(role.getName()).build();
+		return RoleResponseDto.builder().roleId(role.getId()).roleName(role.getRoleName()).build();
 				
 	}
-}
+} 

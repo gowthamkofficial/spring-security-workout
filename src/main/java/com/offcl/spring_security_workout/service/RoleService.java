@@ -26,8 +26,7 @@ public class RoleService {
             throw new AlreadyExistsException("Role already exists " + dto.getRoleName());
         }
 
-        Role role = Role.builder()
-                .name(dto.getRoleName())
+        Role role = Role.builder().roleName(dto.getRoleName())
                 .build();
 
         Role saved = this.roleRepo.save(role);
